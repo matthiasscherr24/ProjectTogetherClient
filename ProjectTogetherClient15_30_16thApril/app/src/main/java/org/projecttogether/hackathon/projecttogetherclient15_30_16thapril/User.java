@@ -5,11 +5,10 @@ package org.projecttogether.hackathon.projecttogetherclient15_30_16thapril;
  */
 public class User {
     int id, indexSkills;
-    String username, email, password, skills[];
+    String email, password, skills[];
     boolean interests;
 
-    public User(String username, String email, String password){
-        this.username = username;
+    public User(String email, String password){
         this.email = email;
         this.password = password;
         interests = new boolean[10];
