@@ -12,4 +12,95 @@
     tools:context="org.projecttogether.hackathon.projecttogetherclient15_30_16thapril.MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/mail_edit_text_id"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/ProjectTogetherLogo"
+        android:layout_alignLeft="@+id/password_edit_text_id"
+        android:layout_alignStart="@+id/password_edit_text_id" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/password_edit_text_id"
+        android:layout_below="@+id/mail_edit_text_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Email"
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/mail_edit_text_id"
+        android:layout_alignLeft="@+id/mail_edit_text_id"
+        android:layout_alignStart="@+id/mail_edit_text_id"
+        android:layout_alignRight="@+id/mail_edit_text_id"
+        android:layout_alignEnd="@+id/mail_edit_text_id" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Passwort"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/password_edit_text_id"
+        android:layout_alignLeft="@+id/password_edit_text_id"
+        android:layout_alignStart="@+id/password_edit_text_id" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ProjectTogetherLogo"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrieren"
+        android:id="@+id/register_button_id"
+        android:layout_below="@+id/password_edit_text_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Das ist deine Mail"
+        android:id="@+id/mail_confirm_id"
+        android:layout_marginTop="135dp"
+        android:layout_below="@+id/register_button_id"
+        android:layout_toLeftOf="@+id/register_button_id"
+        android:layout_toStartOf="@+id/register_button_id" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Das ist dein Passwort"
+        android:id="@+id/password_confirm_id"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/mail_confirm_id"
+        android:layout_alignLeft="@+id/mail_confirm_id"
+        android:layout_alignStart="@+id/mail_confirm_id" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ihre Daten:"
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/mail_confirm_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp" />
+
 </RelativeLayout>

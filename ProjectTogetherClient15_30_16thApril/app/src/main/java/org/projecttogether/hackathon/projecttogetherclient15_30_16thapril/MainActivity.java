@@ -8,8 +8,19 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+
+
+    EditText mail_field;
+    EditText password_field;
+    TextView mail_confirm_field;
+    TextView password_confirm_field;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +37,32 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+
+
+        mail_confirm_field = (TextView) findViewById(R.id.mail_confirm_id);
+        password_confirm_field = (TextView) findViewById(R.id.password_confirm_id);
+        mail_field = (EditText) findViewById(R.id.mail_edit_text_id);
+        password_field = (EditText) findViewById(R.id.password_edit_text_id);
+
+
+
+        Button register =(Button)findViewById(R.id.register_button_id); //Wie hineinzieh
+
+        register.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view){
+
+
+                mail_confirm_field.setText(mail_field.getText().toString());
+                password_confirm_field.setText(password_field.getText().toString());
+
+
+
+            }
+
+        }); //IB-Action
     }
 
     @Override
