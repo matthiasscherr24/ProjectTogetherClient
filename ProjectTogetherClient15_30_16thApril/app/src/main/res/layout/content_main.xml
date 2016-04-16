@@ -10,7 +10,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="org.projecttogether.hackathon.projecttogetherclient15_30_16thapril.MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:showIn="@layout/activity_main"
+    style="@style/AppTheme">
 
     <EditText
         android:layout_width="wrap_content"
@@ -18,10 +19,8 @@
         android:inputType="textEmailAddress"
         android:ems="10"
         android:id="@+id/mail_edit_text_id"
-        android:layout_marginTop="29dp"
-        android:layout_below="@+id/ProjectTogetherLogo"
-        android:layout_alignLeft="@+id/password_edit_text_id"
-        android:layout_alignStart="@+id/password_edit_text_id" />
+        android:layout_alignTop="@+id/textView2"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -29,9 +28,10 @@
         android:inputType="textEmailAddress"
         android:ems="10"
         android:id="@+id/password_edit_text_id"
-        android:layout_below="@+id/mail_edit_text_id"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp" />
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignLeft="@+id/mail_edit_text_id"
+        android:layout_alignStart="@+id/mail_edit_text_id" />
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -39,11 +39,10 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Email"
         android:id="@+id/textView"
-        android:layout_alignTop="@+id/mail_edit_text_id"
-        android:layout_alignLeft="@+id/mail_edit_text_id"
-        android:layout_alignStart="@+id/mail_edit_text_id"
-        android:layout_alignRight="@+id/mail_edit_text_id"
-        android:layout_alignEnd="@+id/mail_edit_text_id" />
+        android:layout_below="@+id/username_edit_text_id"
+        android:layout_alignLeft="@+id/username_edit_text_id"
+        android:layout_alignStart="@+id/username_edit_text_id"
+        android:layout_marginTop="36dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -51,9 +50,10 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Passwort"
         android:id="@+id/textView2"
-        android:layout_alignTop="@+id/password_edit_text_id"
-        android:layout_alignLeft="@+id/password_edit_text_id"
-        android:layout_alignStart="@+id/password_edit_text_id" />
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="46dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -62,8 +62,18 @@
         android:id="@+id/register_button_id"
         android:layout_below="@+id/password_edit_text_id"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp" />
+        android:layout_marginTop="151dp" />
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/username_edit_text_id"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/password_edit_text_id"
+        android:layout_alignStart="@+id/password_edit_text_id" />
 
 
 </RelativeLayout>

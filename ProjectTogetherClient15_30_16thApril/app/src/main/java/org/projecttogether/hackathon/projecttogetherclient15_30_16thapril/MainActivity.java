@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText mail_field;
     EditText password_field;
+    EditText username_field;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        username_field = (EditText) findViewById(R.id.username_edit_text_id);
         mail_field = (EditText) findViewById(R.id.mail_edit_text_id);
         password_field = (EditText) findViewById(R.id.password_edit_text_id);
 
@@ -47,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
 
+           User u = new User(username_field.getText().toString(), mail_field.getText().toString(),password_field.getText().toString());
 
-           User u = new User(mail_field.getText().toString(),password_field.getText().toString());
             }
 
         }); //IB-Action
